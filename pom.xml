@@ -9,8 +9,24 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <suiteXmlFile>src/test/resources/parallelTests.xml</suiteXmlFile>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <suiteXmlFile>src/test/resources/regression.xml</suiteXmlFile>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <aspectjweaver.version>1.9.6</aspectjweaver.version>
+        <testng.version>7.5</testng.version>
+        <selenium-java.version>3.141.59</selenium-java.version>
+        <webdrivermanager.version>5.0.0</webdrivermanager.version>
+        <allure-testng.version>2.13.9</allure-testng.version>
+        <lombock.version>1.18.22</lombock.version>
+        <javafaker.version>1.0.2</javafaker.version>
+        <log4j-core.version>2.17.1</log4j-core.version>
+        <jackson-dataformat-yaml.version>2.12.3</jackson-dataformat-yaml.version>
+        <slf4j-api.version>1.7.25</slf4j-api.version>
+        <slf4j-simple.version>1.7.25</slf4j-simple.version>
+        <selenide.version>6.2.0</selenide.version>
     </properties>
 
     <dependencies>
@@ -18,15 +34,21 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>6.2.0</version>
+            <version>${selenide.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.5</version>
+            <version>${testng.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javafaker.version}</version>
         </dependency>
 
     </dependencies>
