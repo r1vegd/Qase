@@ -1,5 +1,6 @@
 package tests.base;
 
+import adapters.ProjectAdapter;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
@@ -12,6 +13,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 public class BaseTest {
     protected LoginPage loginPage;
     protected ProjectsPage projectsPage;
+
 
     @BeforeTest
     public void setUp() {
